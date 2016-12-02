@@ -6,4 +6,5 @@ if [ -z "$cluster_key" ]; then
         eval $(curl -s https://portal.cloudhero.io/bootstrap/$cluster_key/script | sh) 
    fi
 cat /etc/motd
+docker ps -a
 /bin/sh 
